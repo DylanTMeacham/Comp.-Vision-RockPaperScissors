@@ -12,7 +12,7 @@ def _in_main():
         classNames = f.read().split('\n')
         f.close()
     
-    #open("testoutput", "w").close() #debug
+    open("testoutput", "w").close() #debug
 
     model = keras.models.load_model('mp_hand_gesture') 
         
