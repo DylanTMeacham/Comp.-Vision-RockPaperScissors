@@ -20,7 +20,7 @@ classNames = f.read().split('\n')
 f.close()
 
 # Initialize the webcam
-cap = cv2.VideoCapture(1)
+cap = cv2.VideoCapture(0)
 
 def _in_main():
     global landmarks, prediction
