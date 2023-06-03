@@ -8,11 +8,9 @@ def _in_Visions():
     while True:
 
         _, frame = cap.read()
-
-        # Show the final output
         cv2.imshow("Output", frame) 
-
         c =  cv2.waitKey(1) 
+
         if c == 27:
             cap.release()
             cv2.destroyAllWindows()
