@@ -1,8 +1,6 @@
 
 import random
 
-Playing = True
-
 def _in_Rock_Paper_Scissors ():
 
     while True:
@@ -44,14 +42,9 @@ def _in_Rock_Paper_Scissors ():
             else:
                 print("Image lossing to a comp")
 
-        playAgain = input("Play agin? (y/n):").lower()
-        if not playAgain.input() == "y":
-            Playing = False
-            print("Thanks for PLaying")
-
 def Rock_Paper_Scissors():
     try:
-        while Playing:
+        while True:
             _in_Rock_Paper_Scissors()
     except StopIteration:
         pass
