@@ -1,6 +1,9 @@
 from sklearn.model_selection import train_test_split
+from keras.callbacks import TensorBoard
 from keras.utils import to_categorical
 from matplotlib import pyplot as plt
+from keras.layers import LSTM, Dense
+from keras.models import Sequential
 import mediapipe as mp
 import numpy as np
 import cv2 as cv
@@ -113,4 +116,3 @@ for action in actions:
 x = np.array(sequences)
 y = to_categorical(labels).astype(int)
 x_train, x_test, y_train, y_test = train_test_split(x, y, test_size=0.05)
-print(y_test.shape)
